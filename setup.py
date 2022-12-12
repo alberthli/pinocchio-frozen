@@ -17,7 +17,7 @@ setuptools.setup(
         where="./bindings/python/pinocchio",
         include=["pinocchio"],
     ),
-    package_dir={"": "bindings/python/pinocchio"}
+    package_dir={"": "bindings/python/pinocchio"},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
