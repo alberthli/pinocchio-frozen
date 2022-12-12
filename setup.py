@@ -13,10 +13,12 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/alberthli/pinocchio-frozen",
-    packages=setuptools.find_packages(
-        where="bindings/python",
-        include=["pinocchio"],
-    ),
+    # packages=setuptools.find_packages(
+    #     where="bindings/python",
+    #     include=["pinocchio"],
+    # ),
+    # package_dir={"pinocchio": "bindings/python"},
+    packages=["bindings/python/pinocchio"],
     package_dir={"pinocchio": "bindings/python"},
     classifiers=[
         "Programming Language :: Python :: 3",
