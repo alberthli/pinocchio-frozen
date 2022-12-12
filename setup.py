@@ -13,7 +13,11 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/alberthli/pinocchio-frozen",
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(
+        where="./bindings/python/pinocchio",
+        include=["pinocchio"],
+    ),
+    package_dir={"": "bindings/python/pinocchio"}
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
